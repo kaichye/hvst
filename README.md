@@ -2,12 +2,12 @@ Read Me Please
 
 $ sudo apt-get install git
 
-$ git clone me
+$ git clone https://github.com/kaichye/hvst.git
 
-$ cd me
+$ cd hvst
 
 $ chmod 755 ./giveX.sh
 
-$ sudo ./giveX.sh
+$ ./giveX.sh
 
 $ sudo ./linux.sh
