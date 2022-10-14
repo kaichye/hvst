@@ -10,11 +10,12 @@ printf "\n${info}Printing out the services that are not installed by default${re
 printf "${info}Services not in the default list${reset}\n"
 
 systemctl --type=service | grep -vf ./dataFiles/defaultServices.data
+systemctl --type=service | grep -vf ./dataFiles/defaultServices.data > ./dataFiles/diffServices.data
 
 printf "\n${info}Default Services that are not there${reset}\n"
 
 systemctl --type=service | cut -d " " -f 1 | grep "\S" > ./dataFiles/currentServices.data
-grep -vf ./dataFiles/currentServices.data ./dataFiles/defaultServices.data > ./dataFiles/diffServices.data
+grep -vf ./dataFiles/currentServices.data ./dataFiles/defaultServices.data
 
 printf "\n${info}Make sure to check often! Services will not appear if it is not started!${reset}"
 
