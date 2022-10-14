@@ -1,5 +1,7 @@
 Read Me Please
 
+$ sudo apt-get install git
+
 $ git clone me
 
 $ cd me
