@@ -12,3 +12,5 @@ Output files that you should take a look at: <br/>
 Services that you need to go over: diffServices.data <br/>
 Installed Packages that you need to go over: diffInstalled.data <br/>
 Not allowed files formats that you need to look over: foundFiles.data <br/>
+
+Thanks for reading :)
