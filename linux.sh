@@ -15,6 +15,9 @@ fi
 # make .vimrc
 printf "set nocompatible\nset backspace=indent,eol,start" > ~/.vimrc
 
+# fix home directory permissions
+chmod 700 -R /home/*
+
 # remove random stuff
 apt-get purge telnet -y
 apt-get purge netcat -y
